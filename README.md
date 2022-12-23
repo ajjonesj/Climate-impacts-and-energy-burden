@@ -9,7 +9,8 @@ Scripts that require total daily electricity consumption
 
 Dependencies:
 Python: 3.9.7 
-cython >=0.21                 :  0.29.32 
+cython >=0.21                 :  0.29.32  
+
 matplotlib >=2.0.0            :  3.5.3 
 numpy >=1.7                   :  1.21.5 
 pandas >=1.1.1                :  1.4.4 
