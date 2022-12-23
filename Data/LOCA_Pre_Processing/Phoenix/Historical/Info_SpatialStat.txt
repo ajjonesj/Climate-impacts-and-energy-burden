@@ -1,0 +1,7 @@
+Period: 2014Jan through 2019Dec
+Latitude bounds: (-0.03125, 0.03125)
+Longitude bounds: (-0.03125, 0.03125)
+
+Rows: [2191] time, days from 1900-1-1
+Cols: First three columns: (Year, Mo, Day), then
+Cols: [64] projection, <scenario.model.run>

@@ -1,0 +1,11 @@
+var: NX
+yr1: 2020
+mo1: Jan
+yr2: 2099
+mo2: Dec
+lat1: 33.1875
+lat2: 33.5625
+lon1: -112.3125
+lon2: -111.9375
+analysis: sm
+products: loca

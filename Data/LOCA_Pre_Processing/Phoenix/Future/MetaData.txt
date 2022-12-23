@@ -1,0 +1,22 @@
+Product:               Local constructed-analogs downscaled GCM data
+Variables:             tasmin    tasmax    
+ Statistics:           Spatial Mean, Spatial Standard Deviation
+Period:                2030Jan through 2099Dec
+Resolution:            1/16 degree
+Latitude bounds:       (33.125, 33.625)
+Longitude bounds:      (-112.375, -111.875)
+Area within bounds:    2581 km^2 (approx)
+Dimensions:         
+ Times:                25567
+ Latitudes:            8
+ Longitudes:           8
+ Projections:          64
+
+
+Global attributes
+-----------------
+Conventions:           CF-1.4
+authors:               David W Pierce
+description:           LOCA (LOcal Constructed Analogs) downscaling
+creation_date:         April, 2016
+institution:           Scripps Institution of Oceanography
