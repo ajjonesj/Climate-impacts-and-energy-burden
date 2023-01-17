@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Write the discription here
+Develops the cooling slopes for the dataset.
 """
 
 import pandas as pd
@@ -11,7 +11,7 @@ import statsmodels.api as sm
 from functions_and_labels import add_race_income
 from functions_and_labels import labels,filtered_hh 
 
-path = 'C:/Users/andre/Box/Andrew Jones_PhD Research/Climate change impacts on future electricity consumption and energy burden'
+path = 'Insert location path here'
 
 #%%Data Processing 
 annual_cooling_points = pd.read_csv(path + '/Data/Baseline/Individual_Cooling_Balance_points.csv').set_index("BILACCT_K")
