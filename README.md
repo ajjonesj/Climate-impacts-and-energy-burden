@@ -5,9 +5,9 @@ Pre-Processing scripts:
    - **LOCA_data_processing.py** - uses downloaded daily average temperature maxs and mins to find the average daily temperauture for a centralized geographic area (this version of the code only includes 1 location point-estimate). 
    
 Results scripts:
-  - **temperature_response_model.py** - develops annual household level temperature response functions using total daily electricity smart meter data. This script includes the 5-parameter regression fixed-effects model. 
-  - **Cooling_slope_reg_model.py** - modifies cooling slopes using the AC efficiency, share of days needed to cool, and infrastructure. 
-  - **SEER_Calibration.py** - modifies SEER rating estimates for households that do not have a SEER rating 
+  - **temperature_response_model.py** - develops annual household level temperature response functions using total daily electricity smart meter data. This script includes the 5-parameter regression fixed-effects model. (Available upon reasonable request)
+  - **Cooling_slope_reg_model.py** - modifies cooling slopes using the AC efficiency, share of days needed to cool, and infrastructure. (Available upon reasonable request)
+  - **SEER_Calibration.py** - modifies SEER rating estimates for households that do not have a SEER rating (Available upon reasonable request)
   - **Future_consumption_simulations.py** - saves and creates climate electricity simulated consumption
   - **Future_consumption_simulations_new_betas.py** - saves and creates climate electricity simulated consumption with the new betas created using Cooling_slope_reg_model.py and SEER_Calibration.py
 
