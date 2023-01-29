@@ -14,7 +14,7 @@ import seaborn as sns
 import string
 import datetime as dt
 
-path = 'C:/Users/andre/Box/Andrew Jones_PhD Research/Climate change impacts on future electricity consumption and energy burden'
+path = 'Insert the file location for the project folder'
 [income_group_axis_labels,income_group_numbers,income_group_labels,
  income_group_legend_labels,year_for_graphs] = labels()
 
@@ -31,7 +31,7 @@ CDD_coeff = pd.read_excel(path + '/Data/Baseline/2015_2019_CDD_coefficients.xlsx
 exogen= pd.read_csv(path+'/Data/exogen_data_mod.csv', parse_dates=[0],
                        index_col=[0])
 
-survey_all = pd.read_stata('C:/Users/andre/Box/RAPID COVID Residential Energy/Arizona_Full datasets/Arizona 2019-2020 dataset/RET_2017_part1.dta')
+survey_all = pd.read_stata('Insert the file location for the survey data ')
 survey_all["VINCOME_new"] = np.nan
 ig_unsorted = [7,4,5,6,2,1,8,3]
 for idxs, ig_num in enumerate(survey_all["VINCOME"][survey_all["VINCOME"]!=""].unique()):
