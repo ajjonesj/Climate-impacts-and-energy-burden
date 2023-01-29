@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 
 survey_all = pd.read_stata(
-    'C:/Users/andre/Box/RAPID COVID Residential Energy/Arizona_Full datasets/Arizona 2019-2020 dataset/RET_2017_part1.dta')
+    'Insert location of the survey data')
 survey_all["VINCOME_new"] = np.nan
 ig_unsorted = [7, 4, 5, 6, 2, 1, 8, 3]
 for idxs, ig_num in enumerate(survey_all["VINCOME"][survey_all["VINCOME"] != ""].unique()):
