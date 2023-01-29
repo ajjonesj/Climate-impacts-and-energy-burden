@@ -10,15 +10,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from functions_and_labels import labels,filtered_hh 
-
-
-pic_path= "C:/Users/andre/Box/Data/Arizona/Graphs/"
-pic_presentation_path= "G:/My Drive/Research/Research Meeting Presentations/Graphics/"
-pic_paper_path = "C:/Users/andre/Box/Writing/Drafts/Paper 1/Figures/"
-climate_results_path = 'C:/Users/andre/Box/Data/Arizona/Estimating Future Demand/Python Code Results/Climate Projections/'
 #------------------------------------------------------------------------------
 #%% Inputs
-path = 'C:/Users/andre/Box/Andrew Jones_PhD Research/Climate change impacts on future electricity consumption and energy burden'
+path = 'Insert path location of the folder to save the data in'
 
 annual_cooling_points = pd.read_csv(path + '/Data/Baseline/Individual_Cooling_Balance_points.csv').set_index("BILACCT_K")
 annual_heating_points = pd.read_csv(path + '/Data/Baseline/Individual_Heating_Balance_points.csv').set_index("BILACCT_K")
@@ -30,7 +24,7 @@ CDD_coeff = pd.read_excel(path + '/Data/Baseline/2015_2019_CDD_coefficients.xlsx
 HDD_coeff = pd.read_excel(path + '/Data/Baseline/2015_2019_HDD_coefficients.xlsx',
                          header=0,
                           index_col=(0))
-
+# panel data is the daily electricity consumption for the households
 panel_data = pd.read_csv(path+'/Data/Daily_consumption.csv', parse_dates=[0],
                        index_col=[0])
 exogen= pd.read_csv(path+'/Data/exogen_data_mod.csv', parse_dates=[0],
@@ -68,7 +62,7 @@ LOCA_future_RCP85_PX_runs = pd.read_excel(path +'/Data/CMIP5_10_Models/LOCA_futu
 year_labels =  ["15/16", "16/17", "17/18", "18/19"]
 
 #%% Identify vulnerable households 
-survey_all = pd.read_stata('C:/Users/andre/Box/RAPID COVID Residential Energy/Arizona_Full datasets/Arizona 2019-2020 dataset/RET_2017_part1.dta')
+survey_all = pd.read_stata('Insert the file location of the survey data here')
 
 survey_all["VINCOME_new"] = np.nan
 ig_unsorted = [7,4,5,6,2,1,8,3]
