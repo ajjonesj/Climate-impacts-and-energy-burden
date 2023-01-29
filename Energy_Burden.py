@@ -12,14 +12,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 plt.rcParams['figure.dpi'] = 1000
 
-path = 'C:/Users/andre/Box/Andrew Jones_PhD Research/Climate change impacts on future electricity consumption and energy burden'
+path = 'Insert path location of the project folder to save files here'
 future_monthly_data = pd.read_csv(
     path + r'/Data/Consumption_Simulations/Monthly_estimates.csv')
 historical_data = pd.read_csv(path + '/Data/Consumption_Simulations/historical.csv',
                               date_parser=('date_s'), low_memory=False)
 past_data_annual = historical_data.groupby(["acct", "model"]).sum()
 survey_all = pd.read_stata(
-    'C:/Users/andre/Box/RAPID COVID Residential Energy/Arizona_Full datasets/Arizona 2019-2020 dataset/RET_2017_part1.dta')
+    'Insert survey data file here')
 survey_all["VINCOME_new"] = np.nan
 ig_unsorted = [7, 4, 5, 6, 2, 1, 8, 3]
 for idxs, ig_num in enumerate(survey_all["VINCOME"][survey_all["VINCOME"] != ""].unique()):
