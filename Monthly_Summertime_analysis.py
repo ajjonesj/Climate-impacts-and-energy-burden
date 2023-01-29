@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from functions_and_labels import labels, filtered_hh, add_demo_data_ele_sim, survey_all
 
-path = ''
+path = 'Insert the location of the project file'
 future_monthly_data = pd.read_csv(path + r'/Data/Consumption_Simulations/Monthly_estimates.csv')
 climate_simualtions_historical_1718 = pd.read_csv(path + '/Data/Consumption_Simulations/historical.csv',
                                                   date_parser=('date_s'), low_memory=False)
