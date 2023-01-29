@@ -12,8 +12,7 @@ import pandas as pd
 import numpy as np
 
 # ---------------------------------------------------------------------------------
-path =  'C:/Users/andre/Box/Andrew Jones_PhD Research/Climate change impacts'\
-' on future electricity consumption and energy burden'
+path =  'Insert the location of the project file'
 # Download data
 LOCA_historical = pd.read_csv(path + 
     '/Data/LOCA_Pre_Processing/Average_Daily_Temperature_by_runs.csv').set_index(
