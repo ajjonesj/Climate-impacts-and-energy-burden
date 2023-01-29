@@ -5,9 +5,9 @@ This file calls the daily electricity data and survey data and makes the necessa
 import pandas as pd
 import numpy as np
  
-path = 'C:/Users/andre/Box/Andrew Jones_PhD Research/Climate change impacts on future electricity consumption and energy burden'
+path = 'Insert path location of the project folder here'
 
-survey_all = pd.read_stata('C:/Users/andre/Box/RAPID COVID Residential Energy/Arizona_Full datasets/Arizona 2019-2020 dataset/RET_2017_part1.dta')
+survey_all = pd.read_stata('Insert path location of the survey results here')
 survey_all["VINCOME_new"] = np.nan
 ig_unsorted = [7,4,5,6,2,1,8,3]
 for idxs, ig_num in enumerate(survey_all["VINCOME"][survey_all["VINCOME"]!=""].unique()):
@@ -39,13 +39,13 @@ def weather_data():
 def panel_data_fun():
     """The function uses the data that Ali created to create a dataframe from
     May 2014 to March 2019""" 
-    summer_2014_2015 = pd.read_stata("C:/Users/andre/Box/RAPID COVID Residential Energy/Results and coding files for Shuchen/2014_2015_s_daily.dta")
-    spring_2014_2015 = pd.read_stata("C:/Users/andre/Box/RAPID COVID Residential Energy/Results and coding files for Shuchen/2014_2015_sp_daily.dta")
-    winter_2014_2015 = pd.read_stata("C:/Users/andre/Box/RAPID COVID Residential Energy/Results and coding files for Shuchen/2014_2015_w_daily.dta").drop(axis=1,labels="index")
-    data_2015_2016  = pd.read_stata("C:/Users/andre/Box/RAPID COVID Residential Energy/Results and coding files for Shuchen/2015_2016_daily.dta")
-    data_2016_2017  = pd.read_stata("C:/Users/andre/Box/RAPID COVID Residential Energy/Results and coding files for Shuchen/2016_2017_daily.dta")
-    data_2017_2018  = pd.read_stata("C:/Users/andre/Box/RAPID COVID Residential Energy/Results and coding files for Shuchen/2017_2018_daily.dta")
-    data_2018_2019  = pd.read_stata("C:/Users/andre/Box/RAPID COVID Residential Energy/Results and coding files for Shuchen/2018_2019_daily.dta")
+    summer_2014_2015 = pd.read_stata("Insert path location here")
+    spring_2014_2015 = pd.read_stata("Insert path location here")
+    winter_2014_2015 = pd.read_stata("Insert path location here").drop(axis=1,labels="index")
+    data_2015_2016  = pd.read_stata("Insert path location here")
+    data_2016_2017  = pd.read_stata("Insert path location here")
+    data_2017_2018  = pd.read_stata("Insert path location here")
+    data_2018_2019  = pd.read_stata("Insert path location here")
 
     panel_data = pd.concat([summer_2014_2015,spring_2014_2015,winter_2014_2015,
                         data_2015_2016,data_2016_2017,data_2017_2018,data_2018_2019
