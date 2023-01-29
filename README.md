@@ -1,4 +1,5 @@
 # Climate change impacts on future residential electricity consumption and energy burden
+Code can be cited here: [![DOI](https://zenodo.org/badge/581330370.svg)](https://zenodo.org/badge/latestdoi/581330370)
 
 ## Pre-Processing scripts:
   - **Data_processing.py** - uses the code to aggregate hourly data found in (Cong et al., 2022) to identify households with at least 360 days of daily observations, and fills missing household electricity prices with the average of the day before and after.  
